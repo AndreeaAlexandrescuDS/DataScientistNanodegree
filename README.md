@@ -15,7 +15,7 @@ The AirBnb datasets were more chanlenging then the Stackoverflow surveys:
 
 There are two files in the project:
 - setup.py contains needed libraries and functions
-- Sicilia-Airbnb-house-prices-EDA.ipynb contains all the rest
+- Sicilia-Airbnb-house-prices.ipynb contains all the rest
 
 Summary of the results I got from the project:
  - Sicily has a lot of Airbnb properties all over the island, at all preferred prices
