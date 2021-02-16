@@ -32,3 +32,6 @@ External sources used for the project:
 - <a href="https://www.kaggle.com/residentmario/sentiment-analysis-and-collocation-of-reviews">sentiment analysis and collocation of reviews</a>
 - <a href="https://www.kaggle.com/erikbruin/airbnb-the-amsterdam-story-with-interactive-maps">Airbnb: The Amsterdam story with interactive maps</a>
 
+The datasets used for the notebook can be downloaded from here:
+- http://insideairbnb.com/get-the-data.html 
+
