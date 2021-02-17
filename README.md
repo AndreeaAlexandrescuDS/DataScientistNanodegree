@@ -2,12 +2,15 @@
 
 ## Project 1: Write A Data Science Blog Post
 
+Blog post <a href="https://andreea-alexandrescu88.medium.com/sicily-airbnb-homes-analysis-b5214b1df545">Sicily AirBnb homes analysis</a>
+<br><br>
+
 Python libraries used in the project:
 - pandas, numpy, datatable, datetime, IPython, matplotlib, seaborn, plotly, scipy, sklearn, folium, wordcloud, networkx, statsmodels, cufflinks
 
 Motivation of the project
 <br>
-The AirBnb datasets were more chanlenging then the Stackoverflow surveys:
+The AirBnb datasets were more chalenging then the Stackoverflow surveys:
 - data is more diverse : numerical, categorical, texts(reviews)
 - the ML techniques one could use on this data are more difficult
 - the graphics are more diverse : maps, time series, barplots, pies, correlation networks
@@ -15,7 +18,7 @@ The AirBnb datasets were more chanlenging then the Stackoverflow surveys:
 
 There are two files in the project:
 - setup.py contains needed libraries and functions
-- Sicilia-Airbnb-house-prices.ipynb contains all the rest
+- 1.Sicilia-Airbnb-house-prices.ipynb contains all the rest
 
 Summary of the results I got from the project:
  - Sicily has a lot of Airbnb properties all over the island, at all preferred prices
