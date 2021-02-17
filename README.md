@@ -33,4 +33,4 @@ External sources used for the project:
 - <a href="https://www.kaggle.com/erikbruin/airbnb-the-amsterdam-story-with-interactive-maps">Airbnb: The Amsterdam story with interactive maps</a>
 
 The datasets used for the notebook can be downloaded from here:
-- < a href="http://insideairbnb.com/get-the-data.html">insideairbnb.com/get-the-data</a> 
+- <a href="http://insideairbnb.com/get-the-data.html">insideairbnb.com/get-the-data</a> 
