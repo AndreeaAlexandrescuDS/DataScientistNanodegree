@@ -8,7 +8,6 @@
 - [Blog post](#Blog-post)
 - [Python libraries](#Python-libraries)
 - [Motivation](#Motivation)
-- [Bugs and feature requests](#bugs-and-feature-requests)
 - [Project structure](#Project-structure)
 - [Summary of the results](#Summary-of-the-results)
 - [External sources](#External-sources)
