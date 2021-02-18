@@ -2,14 +2,26 @@
 
 ## Project 1: Write A Data Science Blog Post
 
+
+## Table of contents
+
+- [Blog post](#Blog-post)
+- [Python libraries](#Python-libraries)
+- [Motivation](#Motivation)
+- [Bugs and feature requests](#bugs-and-feature-requests)
+- [Project structure](#Project-structure)
+- [Summary of the results](#Summary-of-the-results)
+- [External sources](#External-sources)
+- [Data](#Data)
+
 ### Blog post 
 <a href="https://andreea-alexandrescu88.medium.com/sicily-airbnb-homes-analysis-b5214b1df545">Sicily AirBnb homes analysis</a>
 <br><br>
 
-### Python libraries used in the project
+### Python libraries
 - pandas, numpy, datatable, datetime, IPython, matplotlib, seaborn, plotly, scipy, sklearn, folium, wordcloud, networkx, statsmodels, cufflinks
 
-### Motivation of the project
+### Motivation
 <br>
 
 The AirBnb datasets were more chalenging then the Stackoverflow surveys:
@@ -32,13 +44,13 @@ There are two files in the project:
  - prices go up a bit during summer
  - most properties are available until 2022, but this is probably due to covid restrictions :(
 
-### External sources used for the project
+### External sources
 - <a href="https://www.kaggle.com/dgawlik/house-prices-eda">House prices EDA</a>.
 - <a href="https://www.kaggle.com/homayoonkhadivi/innovative-3d-visualization-eda-airbnb-dataset">innovative-3d-visualization-eda-airbnb-dataset</a>
 - <a href="https://www.kaggle.com/residentmario/sentiment-analysis-and-collocation-of-reviews">sentiment analysis and collocation of reviews</a>
 - <a href="https://www.kaggle.com/erikbruin/airbnb-the-amsterdam-story-with-interactive-maps">Airbnb: The Amsterdam story with interactive maps</a>
 
-### Data used in the project
+### Data
 The datasets used for the notebook can be downloaded from here:
 - http://insideairbnb.com/get-the-data.html 
 
