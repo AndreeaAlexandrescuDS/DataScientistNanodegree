@@ -2,6 +2,13 @@
 
 ## Project 1: Write A Data Science Blog Post
 
+<p align="center">
+  <a>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Sicilian_Flag.svg" alt="Sicily's flag" width="600" height="300">
+  </a>
+</p>
+
+<h5 align="center">Trinacria, symbol of Sicily</h5>
 
 ## Table of contents
 
