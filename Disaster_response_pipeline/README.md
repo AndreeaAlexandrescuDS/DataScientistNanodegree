@@ -48,7 +48,7 @@ We are providing much of the flask web app for you, but feel free to add extra f
 - Modify file paths for database and model as needed
 - Add data visualizations using Plotly in the web app. One example is provided for you
 
-### Instructions to run the app:
+## Instructions to run the app:
 1. Run the following commands in the project's root directory to set up your database and model.
 
     - To run ETL pipeline that cleans data and stores in database
