@@ -1,3 +1,9 @@
+### Scope : data cleaning pipeline that:
+# -    Loads the messages and categories datasets
+# -    Merges the two datasets
+# -    Cleans the data
+# -    Stores it in a SQLite database
+
 
 # import libraries
 import sys
@@ -6,6 +12,14 @@ from sqlalchemy import create_engine
 
 
 def load_data(messages_filepath, categories_filepath):
+    """ 
+      Function that reads two datasets from specified filepath,
+    merges them and returns only the merged result.
+      Arguments:
+      --messages_filepath: path to the messages set (ex. 'disaster_messages.csv')
+      --categories_filepath: path to the categories set(ex. 'disaster_categories.csv') 
+    """       
+    
     # load messages dataset
     messages = pd.read_csv(messages_filepath)
     # load categories dataset
@@ -15,6 +29,13 @@ def load_data(messages_filepath, categories_filepath):
     return df
 
 def clean_data(df):
+    """
+      Function that processes the dataset returned from the load_data() function,
+    in order to get it ready for the next modelling part: make 36 separate targets 
+    from a single concateneted list of targets.
+      Arguments: 
+      -- df: dataframe to be processed
+    """
 
     # create a dataframe of the 36 individual category columns
     categories = df.categories.str.split(pat=';', n=-1, expand=True)
@@ -48,12 +69,25 @@ def clean_data(df):
 
 
 def save_data(df, database_filename):
+    """
+      Save data into a SQLite database
+      Arguments:
+      --df: data to be saved
+      --database_filename: name of the SQL data base(ex. 'DBAndreeaA.db')
+    """
+    # create SQLite engine
     engine = create_engine('sqlite:///' + database_filename)
+    # save df to the SQLite engine
     df.to_sql('input_disaster', engine, index=False)
     print('input_disaster table saved to ' + 'sqlite:///' + database_filename)
 
 
 def main():
+    """
+      Main function that takes 4 arguments and calls the functions defined above,
+    with the provided arguments.
+    """
+    
     if len(sys.argv) == 4:
 
         messages_filepath, categories_filepath, database_filepath = sys.argv[1:]
