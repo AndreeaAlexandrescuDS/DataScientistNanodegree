@@ -26,11 +26,11 @@ def tokenize(text):
     return clean_tokens
 
 # load data
-engine = create_engine('sqlite:///DBAndreeaA.db')
-df = pd.read_sql_table('input_disaster', engine)
+database_filepath = '/home/jovyan/work/analysis/DSNanodegree/DisasterResponseProject/data/DBAndreeaA.db'
+df = pd.read_sql_table('input_disaster', 'sqlite:///' + database_filepath)
 
 # load model
-model = joblib.load("../models/classifier.pkl")
+model = joblib.load("/home/jovyan/work/analysis/DSNanodegree/DisasterResponseProject/models/classifier.pkl")
 
 
 # index webpage displays cool visuals and receives user input text for model
@@ -42,6 +42,15 @@ def index():
     # TODO: Below is an example - modify to extract data for your own visuals
     genre_counts = df.groupby('genre').count()['message']
     genre_names = list(genre_counts.index)
+    
+    medical_help_cnt = df.groupby('medical_help').count()['message']
+    medical_help_names =  ["No medical help requiered', 'Medical help required']
+    
+    water_cnt = df.groupby('water').count()['message']
+    water_names =  ['No water request', 'Water request']
+    
+    food_cnt = df.groupby('food').count()['message']
+    food_names =  ['No food request', 'Food request']
     
     # create visuals
     # TODO: Below is an example - modify to create your own visuals
@@ -63,7 +72,68 @@ def index():
                     'title': "Genre"
                 }
             }
-        }
+        },
+        {
+            'data': [
+                Bar(
+                    x=medical_help_names,
+                    y=medical_help_cnt
+                )
+            ],
+
+            'layout': {
+                'title': 'Distribution of Medical help messages ',
+                'yaxis': {
+                    'title': "Count"
+                },
+                'xaxis': {
+                    'title': "Medical help requests"
+                }
+            }
+        },
+        
+        {
+            'data': [
+                Bar(
+                    x=water_names,
+                    y=water_cnt
+                )
+            ],
+
+            'layout': {
+                'title': 'Distribution of Water requests messages ',
+                'yaxis': {
+                    'title': "Count"
+                },
+                'xaxis': {
+                    'title': "Water requests"
+                }
+            }
+        },
+        
+        {
+            'data': [
+                Bar(
+                    x=food_names,
+                    y=food_cnt
+                )
+            ],
+
+            'layout': {
+                'title': 'Distribution of Food help messages ',
+                'yaxis': {
+                    'title': "Count"
+                },
+                'xaxis': {
+                    'title': "Food requests"
+                }
+            }
+        },
+        
+        
+        
+        
+        
     ]
     
     # encode plotly graphs in JSON
